@@ -1,3 +1,4 @@
+ 
 let a = [
        '(0, 255, 255)',
      '(240, 255, 255)',
@@ -88,43 +89,18 @@ let a = [
          '(255, 255, 0)',
          '(255, 255, 255)'
     ]
-     
+  
         $(document).ready(function(){
-            setInterval(function(){ 
-         let ran =  Math.floor(Math.random() * 31)  
-    let arr1 =   [] 
-        for(let i = 0 ; arr1.length < 4 ; i++ ){
          
-        arr1.push( Math.floor(Math.random() * 1000) + 'px')
-        
-        console.log(arr1)
-            
-    }
-    let arr2 =   [] 
-        for(let i = 0 ; arr2.length < 2 ; i++ ){
-         
-        arr2.push( Math.floor(Math.random() * 500)  )
-        
-        console.log(arr2)
-            
-    } 
             let ran1 = Math.floor(Math.random() * 44)
             
-            console.log(`${ran1}`)
-            console.log('fsdfs' , a[ran1])
-             $("div").css("background-color",`rgb${a[ran1]}` )
-    $("div").animate({
-         
-              left: `${arr1[1]}` ,
-              top: `${arr1[2]}` ,
-              bottom: `${arr1[3]}`,
-               right: `${arr1[4]}`, 
-              height:`${arr2[1]}`,
-              width:`${arr1[2]}`,
-     backgroundColor: `${a[ran1]}` }, "slow");
-    
-//    Math.floor(Math.random() * 6);
-    }, 1000);
+          console.log(a[ran1])
+            let as = `rgb${a[ran1]}`
+            console.log(as)
+    $("div").css("background-color",`rgb${a[ran1]}` )
+     
+//    
+   
 
                   
                    });
